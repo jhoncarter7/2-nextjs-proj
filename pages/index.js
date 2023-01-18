@@ -30,9 +30,9 @@ const Dummy_data = [
 
 function DetailsPage(props) {
     
-  return <MeetupList meetups={Dummy_data} />;
+//   return <MeetupList meetups={Dummy_data} />;
 
-// return <MeetupList meetups={props.meetups} />
+return <MeetupList meetups={props.meetups} />
 }
 
 
@@ -41,12 +41,12 @@ function DetailsPage(props) {
 
 
 
-// export async function getStaticsProps() {
-//   return {
-//     props: {
-//       meetups: Dummy_data,
-//     },
-//   };
-// }
+export async function getStaticsProps() {
+  return {
+    props: {
+      meetups: Dummy_data,
+    },
+  };
+}
 
 export default DetailsPage;
