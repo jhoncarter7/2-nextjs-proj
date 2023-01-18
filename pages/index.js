@@ -30,15 +30,15 @@ const Dummy_data = [
 
 function DetailsPage(props) {
     
-  return <MeetupList meetups={props.meetups} />;
+  return <MeetupList meetups={Dummy_data} />;
 }
 
-export async function getStaticsProps() {
-  return {
-    props: {
-      meetups: Dummy_data,
-    },
-  };
-}
+// export async function getStaticsProps() {
+//   return {
+//     props: {
+//       meetups: Dummy_data,
+//     },
+//   };
+// }
 
 export default DetailsPage;
