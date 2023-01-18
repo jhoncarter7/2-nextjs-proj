@@ -30,15 +30,17 @@ const Dummy_data = [
 
 function DetailsPage(props) {
     
-  return <MeetupList meetups={Dummy_data} />;
+//   return <MeetupList meetups={Dummy_data} />;
+return <MeetupList meetups={props.meetups} />
 }
-
-// export async function getStaticsProps() {
-//   return {
-//     props: {
-//       meetups: Dummy_data,
-//     },
-//   };
-// }
+//bro if u remove getstaticsPros and un commit  details return site will work 
+// but after adding  this getstaticsPros its not working there is some map issue
+export async function getStaticsProps() {
+  return {
+    props: {
+      meetups: Dummy_data,
+    },
+  };
+}
 
 export default DetailsPage;
