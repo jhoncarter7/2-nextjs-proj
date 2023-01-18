@@ -41,7 +41,7 @@ return <MeetupList meetups={props.meetups} />
 
 
 
-export async function getStaticsProps() {
+export async function getStaticProps() {
   return {
     props: {
       meetups: Dummy_data,
